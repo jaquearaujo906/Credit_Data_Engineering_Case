@@ -60,10 +60,11 @@ A solução inclui análise estatística descritiva sobre o conjunto de dados Go
 Essas estatísticas validam completude de dados, usabilidade de negócio, integridade estrutural e consistência histórica.
 
 Ordem de Execução:
-1. 00_siape_config_and_utils
-2. 01_siape_bronze_ingestion
-3. 02_siape_silver_standardization
-4. 03_siape_gold_product_and_stats
+1. 99_fix_file_names
+2. 00_siape_config_and_utils
+3. 01_siape_bronze_ingestion
+4. 02_siape_silver_standardization
+5. 03_siape_gold_product_and_stats
 
 Considerações de Prontidão para Produção:
 A solução suporta ingestão incremental mensal, preserva partições históricas, mantém linhagem de dados, habilita processamento Delta escalável e separa lógica de ingestão de lógica de transformação. A arquitetura é projetada para manutenibilidade, evolução e extensão para conjuntos de dados de informações públicas adicionais dentro do mesmo esquema.
