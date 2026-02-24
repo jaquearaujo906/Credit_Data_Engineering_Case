@@ -1,0 +1,12 @@
+# dados gerados pelo pipeline
+datalake/
+data/raw/
+
+# python
+__pycache__/
+*.pyc
+.env
+
+# spark temp
+derby.log
+metastore_db/
